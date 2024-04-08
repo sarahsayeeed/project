@@ -1,4 +1,5 @@
 /* main.css */
+
 /* Reset styles */
 * {
     margin: 0;
@@ -22,14 +23,10 @@ header {
     background-color: #47736a;
     color: #fff;
     padding: 20px 0;
-    
 }
-
-
 
 .tagline {
     float: right; /* Adjust as per your design */
-
 }
 
 /* Navigation styles */
@@ -74,11 +71,7 @@ nav ul ul li {
 /* Hero section styles */
 .hero img {
     width: 100%;
-    
 }
-
-
-
 
 /* Cards section styles */
 .cards {
@@ -95,4 +88,55 @@ footer {
 /* Copyright styles */
 .copyright {
     text-align: center;
+}
+
+/* Text and Image section styles */
+.text-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.text-image .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text-image .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-image .image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-image .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Clip path for the image */
+.text-image .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.text-image .image:nth-child(even)::before {
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
 }
