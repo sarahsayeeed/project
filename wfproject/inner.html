@@ -1,105 +1,107 @@
+<!-- CSS for Inner Page -->
+<link rel="stylesheet" href="inner.css" />
 
-    <!-- CSS for Inner Page -->
-    <link rel="stylesheet" href="inner.css">
+<!-- Inner Page Content -->
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>More Info on the Store</h1>
+    <img src="videogame2.jpg" alt="Hero Image" />
+  </div>
+</section>
 
-    <!-- Inner Page Content -->
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>More Info on the Store</h1>
-            <img src="videogame2.jpg" alt="Hero Image">
-        </div>
-    </section>
+<!-- Text and Video Section -->
+<section class="text-video">
+  <div class="container">
+    <div class="text">
+      <h2>Text Section Heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida
+        odio ut ligula eleifend, eget finibus felis lacinia.
+      </p>
+      <!-- Add more paragraphs as needed -->
+    </div>
+    <div class="video">
+      <h2>Video Section</h2>
+      <video controls poster="images/video-poster.jpg">
+        <source src="media/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
 
-    <!-- Text and Video Section -->
-    <section class="text-video">
-        <div class="container">
-            <div class="text">
-                <h2>Text Section Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida odio ut ligula eleifend, eget finibus felis lacinia.</p>
-                <!-- Add more paragraphs as needed -->
-            </div>
-            <div class="video">
-                <h2>Video Section</h2>
-                <video controls poster="images/video-poster.jpg">
-                    <source src="media/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
+<!-- Table Section -->
+<section class="table">
+  <div class="container">
+    <h2>Table Section Heading</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Goals</th>
+          <th>Assists</th>
+          <th>Penalties</th>
+          <th>Games Played</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table content -->
+      </tbody>
+    </table>
+    <p>Table data source: [Provide reference]</p>
+  </div>
+</section>
 
-    <!-- Table Section -->
-    <section class="table">
-        <div class="container">
-            <h2>Table Section Heading</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Goals</th>
-                        <th>Assists</th>
-                        <th>Penalties</th>
-                        <th>Games Played</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Table content -->
-                </tbody>
-            </table>
-            <p>Table data source: [Provide reference]</p>
-        </div>
-    </section>
+<!-- Form Section -->
+<section class="form">
+  <div class="container">
+    <h2 style="color: red">Form Section</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <!-- Add more form elements as needed -->
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>Checkbox Question:</label><br />
+        <input type="checkbox" id="option1" name="option1" value="option1" />
+        <label for="option1">Option 1</label><br />
+        <!-- Add more checkboxes as needed -->
+      </div>
+      <div class="form-group">
+        <label>Radio Button Question:</label><br />
+        <input type="radio" id="radio1" name="radio" value="radio1" required />
+        <label for="radio1">Option 1</label><br />
+        <input type="radio" id="radio2" name="radio" value="radio2" />
+        <label for="radio2">Option 2</label><br />
+        <!-- Add more radio buttons as needed -->
+      </div>
+      <div class="form-group">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
 
-    <!-- Form Section -->
-    <section class="form">
-        <div class="container">
-            <h2>Form Section</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <!-- Add more form elements as needed -->
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Checkbox Question:</label><br>
-                    <input type="checkbox" id="option1" name="option1" value="option1">
-                    <label for="option1">Option 1</label><br>
-                    <!-- Add more checkboxes as needed -->
-                </div>
-                <div class="form-group">
-                    <label>Radio Button Question:</label><br>
-                    <input type="radio" id="radio1" name="radio" value="radio1" required>
-                    <label for="radio1">Option 1</label><br>
-                    <input type="radio" id="radio2" name="radio" value="radio2">
-                    <label for="radio2">Option 2</label><br>
-                    <!-- Add more radio buttons as needed -->
-                </div>
-                <div class="form-group">
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Inner Page Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-menu">
-                <!-- Menu section -->
-            </div>
-            <div class="copyright">
-                <!-- Copyright info -->
-                <p>&copy; Sarah Sayeed | Email: Sarahsayeed1234@gmail.com</p>
-            </div>
-        </div>
-    </footer>
+<!-- Inner Page Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-menu">
+      <!-- Menu section -->
+    </div>
+    <div class="copyright">
+      <!-- Copyright info -->
+      <p>&copy; Sarah Sayeed | Email: Sarahsayeed1234@gmail.com</p>
+    </div>
+  </div>
+</footer>
