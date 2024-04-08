@@ -123,26 +123,30 @@ footer {
     height: auto;
 }
 
-/* Clip path for the images */
-.text-image .image::before {
+/* Clip path and background image for the first text-image section */
+.text-image:nth-of-type(odd) .image::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image1.jpg');
     background-size: cover;
     background-position: center;
-}
-
-/* Clip path for the first image */
-.text-image .image:nth-child(odd)::before {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image1.jpg');
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 }
 
-/* Clip path for the second image */
-.text-image .image:nth-child(even)::before {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image2.jpg');
+/* Clip path and background image for the second text-image section */
+.text-image:nth-of-type(even) .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image2.jpg');
+    background-size: cover;
+    background-position: center;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
 }
