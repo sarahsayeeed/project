@@ -1,0 +1,98 @@
+/* main.css */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #47736a;
+    color: #fff;
+    padding: 20px 0;
+    
+}
+
+
+
+.tagline {
+    float: right; /* Adjust as per your design */
+
+}
+
+/* Navigation styles */
+nav {
+    background-color: #9cdbce;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #2c2c2d;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Submenu styles */
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+/* Hero section styles */
+.hero img {
+    width: 100%;
+    
+}
+
+
+
+
+/* Cards section styles */
+.cards {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f97e7e;
+    color: 7faaf4;
+    padding: 20px 0;
+}
+
+/* Copyright styles */
+.copyright {
+    text-align: center;
+}
