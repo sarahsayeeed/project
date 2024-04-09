@@ -148,5 +148,5 @@ footer {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image2.jpg');
     background-size: cover;
     background-position: center;
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 20% 0, 100 0, 80% 0);
 }
