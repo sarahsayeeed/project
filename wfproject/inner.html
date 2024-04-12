@@ -12,19 +12,17 @@
 
 <!-- Text and Video Section -->
 <section class="text-video">
-  <div class="container">
-    <div class="text">
-      <h2>Text Section Heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida
-        odio ut ligula eleifend, eget finibus felis lacinia.
-      </p>
-      <!-- Add more paragraphs as needed -->
-    </div>
-    <div class="video">
+
+  <div id="video-textContainer">
+    <div class="text-container">
       <h2>Video Section</h2>
-      <video controls poster="images/video-poster.jpg">
-        <source src="media/video.mp4" type="video/mp4" />
+      <div>Some heading</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae accusantium id libero. Corrupti ullam in sint corporis! Voluptas nihil ducimus dolor Corrupti quaerat possimus odio adipisci. Fugit, necessitatibus accumsantur!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa odit persp icatis dolores? Similique rerum deserunt, architecto quam illo illum!</p>
+    </div>
+    <div id="video-container">
+      <video controls>
+        <source src="videos/myvideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -56,39 +54,42 @@
 <!-- Form Section -->
 <section class="form">
   <div class="container">
-    <h2 style="color: red">Form Section</h2>
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <!-- Add more form elements as needed -->
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </div>
-      <div class="form-group">
-        <label>Checkbox Question:</label><br />
-        <input type="checkbox" id="option1" name="option1" value="option1" />
-        <label for="option1">Option 1</label><br />
-        <!-- Add more checkboxes as needed -->
-      </div>
-      <div class="form-group">
-        <label>Radio Button Question:</label><br />
-        <input type="radio" id="radio1" name="radio" value="radio1" required />
-        <label for="radio1">Option 1</label><br />
-        <input type="radio" id="radio2" name="radio" value="radio2" />
-        <label for="radio2">Option 2</label><br />
-        <!-- Add more radio buttons as needed -->
-      </div>
-      <div class="form-group">
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-      </div>
+    <h2">Form Section</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <optgroup label="Group 1">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="option4">Option 4</option>
+          <option value="option5">Option 5</option>
+          <option value="option6">Option 6</option>
+        </optgroup>
+      </select>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+      
+      <label>Question 1:</label>
+      <label><input type="checkbox" name="question1" value="option1"> Option 1</label>
+      <label><input type="checkbox" name="question1" value="option2"> Option 2</label>
+      <label><input type="checkbox" name="question1" value="option3"> Option 3</label>
+      
+      <label>Question 2:</label>
+      <label><input type="radio" name="question2" value="option1"> Option 1</label>
+      <label><input type="radio" name="question2" value="option2"> Option 2</label>
+      
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </section>
