@@ -36,7 +36,8 @@ header {
 }
 
 .tagline {
-    text-align: right; /* Align tagline to the right */
+    text-align: center; 
+    margin-right: 35%;
 }
 
 
@@ -227,4 +228,13 @@ footer {
     width: 90vw;
     padding-top: 30px;
     border-top: 1px solid black;
+  }
+
+  .header-container{
+    height: 10vh;
+    width: 100vw;
+    /* background-color: #85d279; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
